@@ -10,7 +10,7 @@ public class Cell {
     private final Color gHoveredColor = new Color(200, 200, 200), gSelectedColor = new Color(120, 255, 120);
     private int content;
     private int absX, absY;
-    private boolean isRepeated = false, isHovered = false, isSelected = false, locked;
+    public boolean isRepeated = false, isHovered = false, isSelected = false, locked;
     public Rectangle gRect;
 
     public Cell(int content, int x, int y){
