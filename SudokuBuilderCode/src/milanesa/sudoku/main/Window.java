@@ -28,7 +28,7 @@ public class Window extends JFrame {
             }
         };
 
-        setLookAndFeel();
+        //setLookAndFeel();
 
         sudokuCreator = new SudokuCreator(panel);
 
@@ -71,6 +71,16 @@ public class Window extends JFrame {
         randomizeItem.setActionCommand("randomize_all");
         randomizeItem.addActionListener(sudokuCreator);
         actionTab.add(randomizeItem);
+
+        JMenuItem generateItem = new JMenuItem("Generate Valid Grid");
+        generateItem.setActionCommand("generate");
+        generateItem.addActionListener(sudokuCreator);
+        actionTab.add(generateItem);
+
+        JMenuItem generateByRandomItem = new JMenuItem("Randomize Until Valid");
+        generateByRandomItem.setActionCommand("randomize_generate");
+        generateByRandomItem.addActionListener(sudokuCreator);
+        actionTab.add(generateByRandomItem);
     }
 
     private void paintPanel(Graphics g){

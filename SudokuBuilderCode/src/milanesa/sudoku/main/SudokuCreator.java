@@ -101,6 +101,29 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
         }
     }
 
+    private void generateValidGrid(){
+        new Thread(() -> {
+            try {
+                ArrayList<Cell> cellsArray = new ArrayList<>();
+                for (int currentCell = 0; currentCell < 81; currentCell++) {
+                    Cell currentCellObj = fullGrid[currentCell / 9][currentCell % 9];
+                    boolean repetitionSolved = false;
+                    for (int n = currentCellObj.getContent()+1; n < 10; n++) {
+                        currentCellObj.changeContent(n);
+                        updateGrid();
+                        if (!currentCellObj.isRepeated) {
+                            repetitionSolved = true;
+                            break;
+                        }
+                    }
+                    if (!repetitionSolved)
+                        currentCell = 0;
+                    Thread.sleep(100);
+                }
+            }catch(Exception e){e.printStackTrace();}
+        }).start();
+    }
+
     //Randomization/automation methods:
     public void randomizeCells(){
         Random r = new Random();
@@ -213,6 +236,22 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
         }
     }
 
+    private boolean isGridValid(){
+        updateGrid();
+
+        boolean valid = true;
+
+        for(Cell[] cc : fullGrid){
+            for(Cell c : cc){
+                if(c.isRepeated){
+                    valid = false;
+                    break;
+                }
+            }
+        }
+        return valid;
+    }
+
     //Hardware input checking:
     public void keyTyped(KeyEvent e) {
 
@@ -249,7 +288,7 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
         return toReturn;
     }
 
-
+    //I/O Methods.
 
     public void keyReleased(KeyEvent e) {
 
@@ -289,11 +328,23 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
         panel.repaint();
     }
 
+    private void generateValidGridByRandomization(){
+        randomizeCells();
+        while(!isGridValid()){
+            randomizeCells();
+            updateGrid();
+            try{Thread.sleep(50);}catch (Exception e){e.printStackTrace();}
+        }
+    }
+
     public void actionPerformed(ActionEvent e) {
         if(e.getActionCommand().equals("randomize_all")){
             randomizeCells();
+        }else if(e.getActionCommand().equals("generate")){
+            generateValidGrid();
+        }else if(e.getActionCommand().equals("randomize_generate")){
+            new Thread(this::generateValidGridByRandomization).start();
         }
-
         System.out.println(e.getActionCommand());
     }
 
