@@ -77,10 +77,10 @@ public class Window extends JFrame {
         generateItem.addActionListener(sudokuCreator);
         actionTab.add(generateItem);
 
-        JMenuItem generateByRandomItem = new JMenuItem("Randomize Until Valid");
-        generateByRandomItem.setActionCommand("randomize_generate");
-        generateByRandomItem.addActionListener(sudokuCreator);
-        actionTab.add(generateByRandomItem);
+        JMenuItem generateNonStop = new JMenuItem("Generate Valid Grids (Continuous)");
+        generateNonStop.setActionCommand("generate_continuous");
+        generateNonStop.addActionListener(sudokuCreator);
+        actionTab.add(generateNonStop);
     }
 
     private void paintPanel(Graphics g){

@@ -10,7 +10,7 @@ public class Cell {
     private final Color gHoveredColor = new Color(200, 200, 200), gSelectedColor = new Color(120, 255, 120);
     private int content;
     private int absX, absY;
-    public boolean isRepeated = false, isHovered = false, isSelected = false, locked;
+    public boolean isRepeated = false, isHovered = false, isSelected = false;
     public Rectangle gRect;
 
     public Cell(int content, int x, int y){
@@ -36,19 +36,19 @@ public class Cell {
         }else {
             g.setColor(Color.BLACK);
         }
-        g.setFont(cellFont);
-        String numberToDisplay = String.valueOf(content);
-        int stringW = g.getFontMetrics().stringWidth(numberToDisplay);
-        int stringH = g.getFontMetrics().getHeight();
-        int stringX = absX+(SudokuCreator.gCellSize/2)-(stringW/2);
-        int stringY = absY+(SudokuCreator.gCellSize/2)+(stringW/2);
-        g.drawString(numberToDisplay, stringX, stringY);
+        if(content!=0) {
+            g.setFont(cellFont);
+            String numberToDisplay = String.valueOf(content);
+            int stringW = g.getFontMetrics().stringWidth(numberToDisplay);
+            int stringH = g.getFontMetrics().getHeight();
+            int stringX = absX + (SudokuCreator.gCellSize / 2) - (stringW / 2);
+            int stringY = absY + (SudokuCreator.gCellSize / 2) + (stringW / 2);
+            g.drawString(numberToDisplay, stringX, stringY);
+        }
     }
 
     public void repeated(boolean state){
-        if(!locked) {
-            isRepeated = state;
-        }
+        isRepeated = state;
     }
 
     public void beingHovered(boolean state){
@@ -63,21 +63,18 @@ public class Cell {
         this.content = 1+r.nextInt(8);
     }
 
-    public void lock(boolean state){
-        locked = state;
-    }
-
-    public boolean isLocked(){
-        return locked;
-    }
-
     public int getContent(){
         return content;
     }
 
     public void changeContent(int content){
-        if(!locked) {
-            this.content = content;
-        }
+        this.content = content;
+    }
+
+    public void switchContents(Cell cell){
+        int newContent = cell.getContent();
+        cell.changeContent(this.content);
+        this.changeContent(newContent);
+
     }
 }

@@ -1,0 +1,9 @@
+Key:
+
+-Now it can generate a valid grid!
+-Option to generate valid grids every 5 seconds.
+
+Removed:
+
+-Removed cells "lock" state.
+-Removed generation by randomization.
