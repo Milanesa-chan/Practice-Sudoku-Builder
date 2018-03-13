@@ -6,10 +6,12 @@ Latest build: https://github.com/Milanesa-chan/Practice-Sudoku-Builder/raw/maste
 # How to use it
 Click on any of the grid 'cells' to select it. Then, press any number in your keyboard to set it's content.
 Repeated cells will highlight in red. You can create a fully random grid using 'Action > Randomize Cells'.
-
-# TODO
+# Done
 -Make it create a random valid sudoku grid.
 
+# TODO
 -Be able to generate a one solution, unsolved sudoku grid.
 
 -Add the option to export the grid to various formats.
+
+-Add a timer to test performance.
