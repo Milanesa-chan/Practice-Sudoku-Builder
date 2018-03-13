@@ -8,10 +8,12 @@ public class Window extends JFrame {
     private SudokuCreator sudokuCreator;
     private JMenuBar menuBar;
     public static void main(String[] args){new Window();}
+    public JMenuItem menuItemGenerate, menuItemGenerateCont;
+    public static Window currentWindowObj;
 
     private Window(){
+        currentWindowObj = this;
         createWindow();
-
         panel.repaint();
     }
 
@@ -72,15 +74,15 @@ public class Window extends JFrame {
         randomizeItem.addActionListener(sudokuCreator);
         actionTab.add(randomizeItem);
 
-        JMenuItem generateItem = new JMenuItem("Generate Valid Grid");
-        generateItem.setActionCommand("generate");
-        generateItem.addActionListener(sudokuCreator);
-        actionTab.add(generateItem);
+        menuItemGenerate = new JMenuItem("Generate Valid Grid");
+        menuItemGenerate.setActionCommand("generate");
+        menuItemGenerate.addActionListener(sudokuCreator);
+        actionTab.add(menuItemGenerate);
 
-        JMenuItem generateNonStop = new JMenuItem("Generate Valid Grids (Continuous)");
-        generateNonStop.setActionCommand("generate_continuous");
-        generateNonStop.addActionListener(sudokuCreator);
-        actionTab.add(generateNonStop);
+        menuItemGenerateCont = new JMenuItem("Generate Valid Grids (Continuous)");
+        menuItemGenerateCont.setActionCommand("generate_continuous");
+        menuItemGenerateCont.addActionListener(sudokuCreator);
+        actionTab.add(menuItemGenerateCont);
     }
 
     private void paintPanel(Graphics g){
