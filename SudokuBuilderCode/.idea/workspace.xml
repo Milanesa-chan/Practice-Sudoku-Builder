@@ -20,7 +20,7 @@
       <file leaf-file-name="Window.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
+            <state relative-caret-position="680">
               <caret line="81" column="8" lean-forward="false" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -36,7 +36,7 @@
       <file leaf-file-name="SudokuCreator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/SudokuCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="17">
               <caret line="154" column="42" lean-forward="false" selection-start-line="154" selection-start-column="42" selection-end-line="154" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -44,7 +44,6 @@
                 <element signature="method#clearGrid#0;class#SudokuCreator#0" expanded="false" />
                 <element signature="method#changeSelectedContents#0;class#SudokuCreator#0" expanded="false" />
                 <element signature="method#createQuads#0;class#SudokuCreator#0" expanded="false" />
-                <element signature="e#1855#1861#0" expanded="true" />
                 <element signature="method#createCols#0;class#SudokuCreator#0" expanded="false" />
                 <element signature="method#createRows#0;class#SudokuCreator#0" expanded="false" />
                 <element signature="method#createGrid#0;class#SudokuCreator#0" expanded="false" />
@@ -79,7 +78,7 @@
       <file leaf-file-name="CellGroup.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/generics/CellGroup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
+            <state relative-caret-position="544">
               <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -95,7 +94,7 @@
       <file leaf-file-name="Cell.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/generics/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
+            <state relative-caret-position="697">
               <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -168,9 +167,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,6 +206,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -362,12 +361,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.51770836" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.48229167" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.48229167" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -427,6 +426,97 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/Window.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="81" column="8" lean-forward="false" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#createWindow#0;class#Window#0" expanded="false" />
+            <element signature="method#setLookAndFeel#0;class#Window#0" expanded="false" />
+            <element signature="method#paintPanel#0;class#Window#0" expanded="false" />
+            <element signature="method#paintLines#0;class#Window#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/generics/CellGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/generics/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Cell#0;class#Cell#0" expanded="false" />
+            <element signature="e#1738#1739#0" expanded="true" />
+            <element signature="e#1772#1773#0" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
+            <element signature="e#1851#1852#0" expanded="true" />
+            <element signature="e#1898#1899#0" expanded="true" />
+            <element signature="e#1932#1933#0" expanded="true" />
+            <element signature="e#1977#1978#0" expanded="true" />
+            <element signature="e#2022#2023#0" expanded="true" />
+            <element signature="e#2052#2053#0" expanded="true" />
+            <element signature="e#2082#2083#0" expanded="true" />
+            <element signature="e#2127#2128#0" expanded="true" />
+            <element signature="e#2165#2166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/SudokuCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2618">
+          <caret line="154" column="42" lean-forward="false" selection-start-line="154" selection-start-column="42" selection-end-line="154" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#updateGrid#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#clearGrid#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#changeSelectedContents#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#createQuads#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#createCols#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#createRows#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#createGrid#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#randomizeCells#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#checkIfHovered#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#checkIfSelected#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#checkAndSwitch#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#deselectAll#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#paintCells#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#resetRepeatedCells#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#checkRepeatedCells#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#doesGridContainZeroes#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#isGridValid#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#isGridRepeated#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#keyTyped#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#isInputPermitted#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#keyReleased#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#mouseClicked#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#mousePressed#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#mouseEntered#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#mouseExited#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#mouseMoved#0;class#SudokuCreator#0" expanded="false" />
+            <element signature="method#itemStateChanged#0;class#SudokuCreator#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
           <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding>
@@ -443,7 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8755">
           <caret line="515" column="0" lean-forward="false" selection-start-line="515" selection-start-column="0" selection-end-line="515" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -494,7 +583,6 @@
             <element signature="method#clearGrid#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#changeSelectedContents#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createQuads#0;class#SudokuCreator#0" expanded="false" />
-            <element signature="e#1855#1861#0" expanded="true" />
             <element signature="method#createCols#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createRows#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createGrid#0;class#SudokuCreator#0" expanded="false" />
@@ -543,7 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8755">
           <caret line="515" column="0" lean-forward="false" selection-start-line="515" selection-start-column="0" selection-end-line="515" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -594,7 +681,6 @@
             <element signature="method#clearGrid#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#changeSelectedContents#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createQuads#0;class#SudokuCreator#0" expanded="false" />
-            <element signature="e#1855#1861#0" expanded="true" />
             <element signature="method#createCols#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createRows#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createGrid#0;class#SudokuCreator#0" expanded="false" />
@@ -643,7 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8755">
           <caret line="515" column="0" lean-forward="false" selection-start-line="515" selection-start-column="0" selection-end-line="515" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -695,7 +780,6 @@
             <element signature="method#clearGrid#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#changeSelectedContents#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createQuads#0;class#SudokuCreator#0" expanded="false" />
-            <element signature="e#1855#1861#0" expanded="true" />
             <element signature="method#createCols#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createRows#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createGrid#0;class#SudokuCreator#0" expanded="false" />
@@ -764,7 +848,6 @@
             <element signature="method#clearGrid#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#changeSelectedContents#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createQuads#0;class#SudokuCreator#0" expanded="false" />
-            <element signature="e#1855#1861#0" expanded="true" />
             <element signature="method#createCols#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createRows#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createGrid#0;class#SudokuCreator#0" expanded="false" />
@@ -842,7 +925,6 @@
             <element signature="method#clearGrid#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#changeSelectedContents#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createQuads#0;class#SudokuCreator#0" expanded="false" />
-            <element signature="e#1855#1861#0" expanded="true" />
             <element signature="method#createCols#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createRows#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createGrid#0;class#SudokuCreator#0" expanded="false" />
@@ -934,7 +1016,6 @@
             <element signature="method#clearGrid#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#changeSelectedContents#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createQuads#0;class#SudokuCreator#0" expanded="false" />
-            <element signature="e#1855#1861#0" expanded="true" />
             <element signature="method#createCols#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createRows#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createGrid#0;class#SudokuCreator#0" expanded="false" />
@@ -1063,7 +1144,6 @@
             <element signature="method#clearGrid#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#changeSelectedContents#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createQuads#0;class#SudokuCreator#0" expanded="false" />
-            <element signature="e#1855#1861#0" expanded="true" />
             <element signature="method#createCols#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createRows#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createGrid#0;class#SudokuCreator#0" expanded="false" />
@@ -1155,7 +1235,6 @@
             <element signature="method#clearGrid#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#changeSelectedContents#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createQuads#0;class#SudokuCreator#0" expanded="false" />
-            <element signature="e#1855#1861#0" expanded="true" />
             <element signature="method#createCols#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createRows#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createGrid#0;class#SudokuCreator#0" expanded="false" />
@@ -1201,13 +1280,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="515" column="0" lean-forward="false" selection-start-line="515" selection-start-column="0" selection-end-line="515" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/generics/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
+        <state relative-caret-position="697">
           <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1230,7 +1308,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
+        <state relative-caret-position="680">
           <caret line="81" column="8" lean-forward="false" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1244,7 +1322,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/generics/CellGroup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
+        <state relative-caret-position="544">
           <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1258,7 +1336,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/SudokuCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="17">
           <caret line="154" column="42" lean-forward="false" selection-start-line="154" selection-start-column="42" selection-end-line="154" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1266,7 +1344,6 @@
             <element signature="method#clearGrid#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#changeSelectedContents#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createQuads#0;class#SudokuCreator#0" expanded="false" />
-            <element signature="e#1855#1861#0" expanded="true" />
             <element signature="method#createCols#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createRows#0;class#SudokuCreator#0" expanded="false" />
             <element signature="method#createGrid#0;class#SudokuCreator#0" expanded="false" />
