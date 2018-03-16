@@ -9,12 +9,18 @@ public class Window extends JFrame {
     private JMenuBar menuBar;
     public static void main(String[] args){new Window();}
     public JMenuItem menuItemGenerate, menuItemGenerateCont;
+    public JTextField menuSeedField;
     public static Window currentWindowObj;
 
     private Window(){
         currentWindowObj = this;
         createWindow();
         panel.repaint();
+    }
+
+    public String getCurrentSeed(){
+        System.out.println("Current seed return: "+menuSeedField.getText());
+        return menuSeedField.getText();
     }
 
     private void createWindow() {
@@ -54,35 +60,44 @@ public class Window extends JFrame {
         });
     }
 
-    private void setLookAndFeel(){
-        SwingUtilities.invokeLater(() -> {
-            try{
-                UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-            }catch(Exception e){}
-        });
-    }
-
     private void generateMenuBar(){
         menuBar = new JMenuBar();
 
-        JMenu actionTab = new JMenu("Action");
+        JMenu actionTab = new JMenu("Action"); //Action tab.
         menuBar.add(actionTab);
         actionTab.addActionListener(sudokuCreator);
 
-        JMenuItem randomizeItem = new JMenuItem("Randomize Grid");
+        JMenuItem randomizeItem = new JMenuItem("Randomize Grid"); //Randomize item.
         randomizeItem.setActionCommand("randomize_all");
         randomizeItem.addActionListener(sudokuCreator);
         actionTab.add(randomizeItem);
 
-        menuItemGenerate = new JMenuItem("Generate Valid Grid");
+        menuItemGenerate = new JMenuItem("Generate Valid Grid"); //Generate valid grid item.
         menuItemGenerate.setActionCommand("generate");
         menuItemGenerate.addActionListener(sudokuCreator);
         actionTab.add(menuItemGenerate);
 
-        menuItemGenerateCont = new JMenuItem("Generate Valid Grids (Continuous)");
+        menuItemGenerateCont = new JMenuItem("Generate Valid Grids (Continuous)"); //Generate valid grid continuously item.
         menuItemGenerateCont.setActionCommand("generate_continuous");
         menuItemGenerateCont.addActionListener(sudokuCreator);
         actionTab.add(menuItemGenerateCont);
+
+        JMenu menuGenerateWithSeed = new JMenu("Generate Valid Grid With Seed:"); //Generate valid grid with seed menu.
+        actionTab.add(menuGenerateWithSeed);
+
+        menuSeedField = new JTextField(20); //Seed text field.
+        menuSeedField.setActionCommand("seed_generate");
+        menuSeedField.addActionListener(sudokuCreator);
+        menuGenerateWithSeed.add(menuSeedField);
+
+        JMenu optionsTab = new JMenu("Options"); //Options tab.
+        menuBar.add(optionsTab);
+
+        JCheckBox optionPaintGenerating = new JCheckBox("Paint While Generating"); //Option paint generating.
+        optionPaintGenerating.setActionCommand("option_paint_generating");
+        optionPaintGenerating.addActionListener(sudokuCreator);
+        optionPaintGenerating.setSelected(true);
+        optionsTab.add(optionPaintGenerating);
     }
 
     private void paintPanel(Graphics g){

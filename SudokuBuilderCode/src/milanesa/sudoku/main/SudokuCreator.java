@@ -13,7 +13,7 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
     private Cell[][] fullGrid;
     private CellGroup[] cellRows, cellCols;
     private CellGroup[][] cellQuads;
-    private boolean gridCreationFinished;
+    private boolean gridCreationFinished, optionPaintWhileGenerating = true;
     public static final int gCellSize = 50, gQuadLineThickness = 5;
     private JPanel panel;
     private final char[] permittedInputs = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '0'};
@@ -35,8 +35,6 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
     public void updateGrid(){
         resetRepeatedCells();
         checkRepeatedCells();
-
-        panel.repaint();
     }
 
     private void clearGrid(){
@@ -125,6 +123,7 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
         }
 
         updateGrid();
+        panel.repaint();
     }
 
     private boolean generatingCont;
@@ -135,7 +134,7 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
         new Thread(() -> {
             try {
                 while (generatingCont) {
-                    generateValidGrid();
+                    generateValidGrid(0);
                     while (generating) {
                         Thread.sleep(100);
                     }
@@ -147,7 +146,7 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
 
     private boolean generating;
 
-    private void generateValidGrid(){
+    private void generateValidGrid(long seed){
         generating = true;
         currentGenerationThread =
                 new Thread(() -> {
@@ -158,13 +157,21 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
                             totalTries = 0;
                             clearGrid();
                             updateGrid();
+                            if(optionPaintWhileGenerating) panel.repaint();
+
                             Random rand = new Random();
+                            if (seed != 0){
+                                rand.setSeed(seed);
+                                System.out.println("Generating grid with seed: "+seed);
+                            }
+
                             for (CellGroup g : cellRows) {
                                 g.randomizeValidly(rand);
                                 int tries = 0;
                                 while (isGridRepeated() && generating && tries < maxTries) {
                                     g.randomizeValidly(rand);
                                     updateGrid();
+                                    if(optionPaintWhileGenerating) panel.repaint();
                                     tries++;
                                 }
                                 if(isGridRepeated()) break;
@@ -177,6 +184,7 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
                             Window.currentWindowObj.menuItemGenerate.setText("Generate Valid Grid");
                         }
                         generating = false;
+                        panel.repaint();
                     }catch(Exception e){e.printStackTrace();}
                 });
         currentGenerationThread.start();
@@ -313,6 +321,7 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
         if(isInputPermitted(e.getKeyChar())){
             changeSelectedContents((int)e.getKeyChar() - 48);
             updateGrid();
+            panel.repaint();
         }
     }
 
@@ -359,7 +368,9 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
 
     public void mouseMoved(MouseEvent e) {
         checkIfHovered(e.getPoint());
-        panel.repaint();
+        if(!generating) {
+            panel.repaint();
+        }
     }
 
     public void actionPerformed(ActionEvent e) {
@@ -373,7 +384,7 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
                 generating = false;
                 menuItemGenerate.setText("Generate Valid Grid");
             }else{
-                generateValidGrid();
+                generateValidGrid(0);
                 menuItemGenerate.setText("Stop Generating");
             }
         }else if(e.getActionCommand().equals("generate_continuous")){
@@ -386,6 +397,14 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
                 menuItemGenerateCont.setText("Stop Generating (Continuous)");
                 generateContinuously();
             }
+        }else if(e.getActionCommand().equals("seed_generate")){
+            JTextField seedTextField = (JTextField)e.getSource();
+            try {
+                generateValidGrid(Long.valueOf(seedTextField.getText()));
+            }catch(NumberFormatException ex){System.out.println("Seed must be an 8 byte number");}
+        }else if(e.getActionCommand().equals("option_paint_generating")){
+            JCheckBox checkbox = (JCheckBox)e.getSource();
+            optionPaintWhileGenerating = checkbox.isSelected();
         }
         System.out.println(e.getActionCommand());
     }
