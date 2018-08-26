@@ -1,6 +1,7 @@
 package milanesa.sudoku.main;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 
 public class Window extends JFrame {
@@ -24,11 +25,9 @@ public class Window extends JFrame {
     }
 
     private void createWindow() {
-
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        //setVisible(true);
-        //setLayout(new BorderLayout());
-        setLayout(null);
+        setLayout(new BorderLayout());
+        this.setResizable(false);
 
         panel = new JPanel(){
             public void paintComponent(Graphics g){
@@ -36,14 +35,14 @@ public class Window extends JFrame {
                 paintPanel(g);
             }
         };
-
         sudokuCreator = new SudokuCreator(panel);
 
         generateMenuBar();
-        add(menuBar);
-        add(panel);
 
-        int windowSize = 4* SudokuCreator.gQuadLineThickness + 9*SudokuCreator.gCellSize;
+        add(menuBar, BorderLayout.NORTH);
+        add(panel, BorderLayout.SOUTH);
+
+        int windowSize = 4* SudokuCreator.gQuadLineThickness + 9*SudokuCreator.gCellSize + 6;
 
         int menuBarHeight = menuBar.getPreferredSize().height;
         menuBar.setPreferredSize(new Dimension(windowSize, menuBarHeight));
@@ -59,7 +58,6 @@ public class Window extends JFrame {
             this.getContentPane().setPreferredSize(new Dimension(windowSize, windowHeight));
             this.pack();
             this.setVisible(true);
-            this.setResizable(false);
 
             panel.addMouseListener(sudokuCreator);
             panel.addMouseMotionListener(sudokuCreator);

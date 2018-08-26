@@ -21,14 +21,14 @@
         <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/Window.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="434">
-              <caret line="68" column="56" selection-start-line="68" selection-start-column="56" selection-end-line="68" selection-end-column="56" />
+              <caret line="53" column="101" lean-forward="true" selection-start-line="53" selection-start-column="101" selection-end-line="53" selection-end-column="101" />
               <folding>
                 <element signature="method#Window#0;class#Window#0" />
                 <element signature="method#getCurrentSeed#0;class#Window#0" />
-                <element signature="e#872#1033#0" expanded="true" />
-                <element signature="e#1032#1033#0" expanded="true" />
-                <element signature="e#2432#2433#0" expanded="true" />
-                <element signature="e#2475#2476#0" expanded="true" />
+                <element signature="e#881#1042#0" expanded="true" />
+                <element signature="e#1041#1042#0" expanded="true" />
+                <element signature="e#2421#2422#0" expanded="true" />
+                <element signature="e#2464#2465#0" expanded="true" />
                 <element signature="method#generateMenuBar#0;class#Window#0" />
               </folding>
             </state>
@@ -38,8 +38,8 @@
       <file leaf-file-name="SudokuCreator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/SudokuCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+            <state relative-caret-position="256">
+              <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#938#1166#0" />
@@ -162,7 +162,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,6 +184,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
@@ -315,7 +315,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18656716" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19083156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -333,14 +333,14 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48229167" visible="true" weight="0.32943678" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.18020834" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48229167" visible="true" weight="0.32943678" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -372,51 +372,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/SudokuCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
-          <caret line="133" column="26" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#938#1166#0" />
-            <element signature="e#1172#1263#0" />
-            <element signature="e#1269#1425#0" />
-            <element signature="e#1431#1667#0" />
-            <element signature="e#1673#2417#0" />
-            <element signature="e#2423#2730#0" />
-            <element signature="e#2736#2902#0" />
-            <element signature="e#2908#3507#0" />
-            <element signature="e#3513#3798#0" />
-            <element signature="e#3841#4282#0" />
-            <element signature="e#3929#4266#0" />
-            <element signature="e#4321#6250#0" />
-            <element signature="e#6256#6614#0" />
-            <element signature="e#6620#6865#0" />
-            <element signature="e#6871#7124#0" />
-            <element signature="e#7130#7292#0" />
-            <element signature="e#7298#7553#0" />
-            <element signature="e#7559#7768#0" />
-            <element signature="e#7774#8131#0" />
-            <element signature="e#8137#8452#0" />
-            <element signature="e#8458#8794#0" />
-            <element signature="e#8800#9127#0" />
-            <element signature="e#9133#9193#0" />
-            <element signature="e#9199#9459#0" />
-            <element signature="e#9465#9660#0" />
-            <element signature="e#9666#9710#0" />
-            <element signature="e#9716#9762#0" />
-            <element signature="e#9768#10012#0" />
-            <element signature="e#10018#10066#0" />
-            <element signature="e#10072#10119#0" />
-            <element signature="e#10125#10171#0" />
-            <element signature="e#10177#10224#0" />
-            <element signature="e#10230#10377#0" />
-            <element signature="e#10383#12046#0" />
-            <element signature="e#12052#12102#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/Window.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -424,10 +379,10 @@
           <folding>
             <element signature="method#Window#0;class#Window#0" />
             <element signature="method#getCurrentSeed#0;class#Window#0" />
-            <element signature="e#872#1033#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-            <element signature="e#2432#2433#0" expanded="true" />
-            <element signature="e#2475#2476#0" expanded="true" />
+            <element signature="e#881#1042#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#2421#2422#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
             <element signature="method#generateMenuBar#0;class#Window#0" />
           </folding>
         </state>
@@ -525,10 +480,10 @@
           <folding>
             <element signature="method#Window#0;class#Window#0" />
             <element signature="method#getCurrentSeed#0;class#Window#0" />
-            <element signature="e#872#1033#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-            <element signature="e#2432#2433#0" expanded="true" />
-            <element signature="e#2475#2476#0" expanded="true" />
+            <element signature="e#881#1042#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#2421#2422#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
             <element signature="method#generateMenuBar#0;class#Window#0" />
           </folding>
         </state>
@@ -627,10 +582,10 @@
           <folding>
             <element signature="method#Window#0;class#Window#0" />
             <element signature="method#getCurrentSeed#0;class#Window#0" />
-            <element signature="e#872#1033#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-            <element signature="e#2432#2433#0" expanded="true" />
-            <element signature="e#2475#2476#0" expanded="true" />
+            <element signature="e#881#1042#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#2421#2422#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
             <element signature="method#generateMenuBar#0;class#Window#0" />
           </folding>
         </state>
@@ -729,10 +684,10 @@
           <folding>
             <element signature="method#Window#0;class#Window#0" />
             <element signature="method#getCurrentSeed#0;class#Window#0" />
-            <element signature="e#872#1033#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-            <element signature="e#2432#2433#0" expanded="true" />
-            <element signature="e#2475#2476#0" expanded="true" />
+            <element signature="e#881#1042#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#2421#2422#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
             <element signature="method#generateMenuBar#0;class#Window#0" />
           </folding>
         </state>
@@ -832,10 +787,10 @@
           <folding>
             <element signature="method#Window#0;class#Window#0" />
             <element signature="method#getCurrentSeed#0;class#Window#0" />
-            <element signature="e#872#1033#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-            <element signature="e#2432#2433#0" expanded="true" />
-            <element signature="e#2475#2476#0" expanded="true" />
+            <element signature="e#881#1042#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#2421#2422#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
             <element signature="method#generateMenuBar#0;class#Window#0" />
           </folding>
         </state>
@@ -932,10 +887,10 @@
           <folding>
             <element signature="method#Window#0;class#Window#0" />
             <element signature="method#getCurrentSeed#0;class#Window#0" />
-            <element signature="e#872#1033#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-            <element signature="e#2432#2433#0" expanded="true" />
-            <element signature="e#2475#2476#0" expanded="true" />
+            <element signature="e#881#1042#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#2421#2422#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
             <element signature="method#generateMenuBar#0;class#Window#0" />
           </folding>
         </state>
@@ -1032,10 +987,10 @@
           <folding>
             <element signature="method#Window#0;class#Window#0" />
             <element signature="method#getCurrentSeed#0;class#Window#0" />
-            <element signature="e#872#1033#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-            <element signature="e#2432#2433#0" expanded="true" />
-            <element signature="e#2475#2476#0" expanded="true" />
+            <element signature="e#881#1042#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#2421#2422#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
             <element signature="method#generateMenuBar#0;class#Window#0" />
           </folding>
         </state>
@@ -1133,10 +1088,10 @@
           <folding>
             <element signature="method#Window#0;class#Window#0" />
             <element signature="method#getCurrentSeed#0;class#Window#0" />
-            <element signature="e#872#1033#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-            <element signature="e#2432#2433#0" expanded="true" />
-            <element signature="e#2475#2476#0" expanded="true" />
+            <element signature="e#881#1042#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#2421#2422#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
             <element signature="method#generateMenuBar#0;class#Window#0" />
           </folding>
         </state>
@@ -1234,10 +1189,10 @@
           <folding>
             <element signature="method#Window#0;class#Window#0" />
             <element signature="method#getCurrentSeed#0;class#Window#0" />
-            <element signature="e#872#1033#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-            <element signature="e#2432#2433#0" expanded="true" />
-            <element signature="e#2475#2476#0" expanded="true" />
+            <element signature="e#881#1042#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#2421#2422#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
             <element signature="method#generateMenuBar#0;class#Window#0" />
           </folding>
         </state>
@@ -1358,6 +1313,11 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hs_err_pid37500.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5130" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/generics/CellGroup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -1376,8 +1336,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/SudokuCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        <state relative-caret-position="256">
+          <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#938#1166#0" />
@@ -1422,14 +1382,14 @@
     <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/Window.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
-          <caret line="68" column="56" selection-start-line="68" selection-start-column="56" selection-end-line="68" selection-end-column="56" />
+          <caret line="53" column="101" lean-forward="true" selection-start-line="53" selection-start-column="101" selection-end-line="53" selection-end-column="101" />
           <folding>
             <element signature="method#Window#0;class#Window#0" />
             <element signature="method#getCurrentSeed#0;class#Window#0" />
-            <element signature="e#872#1033#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-            <element signature="e#2432#2433#0" expanded="true" />
-            <element signature="e#2475#2476#0" expanded="true" />
+            <element signature="e#881#1042#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#2421#2422#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
             <element signature="method#generateMenuBar#0;class#Window#0" />
           </folding>
         </state>
