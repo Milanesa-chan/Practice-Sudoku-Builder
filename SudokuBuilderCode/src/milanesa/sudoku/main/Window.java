@@ -1,6 +1,7 @@
 package milanesa.sudoku.main;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 
 public class Window extends JFrame {
@@ -24,10 +25,9 @@ public class Window extends JFrame {
     }
 
     private void createWindow() {
-
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setVisible(true);
         setLayout(new BorderLayout());
+        this.setResizable(false);
 
         panel = new JPanel(){
             public void paintComponent(Graphics g){
@@ -35,29 +35,38 @@ public class Window extends JFrame {
                 paintPanel(g);
             }
         };
-
-        //setLookAndFeel();
-
         sudokuCreator = new SudokuCreator(panel);
 
         generateMenuBar();
+
         add(menuBar, BorderLayout.NORTH);
-        add(panel, BorderLayout.CENTER);
+        add(panel, BorderLayout.SOUTH);
 
-        int windowSize = 4* SudokuCreator.gQuadLineThickness +9* SudokuCreator.gCellSize +6;
-        panel.setSize(windowSize, windowSize);
+        int windowSize = 4* SudokuCreator.gQuadLineThickness + 9*SudokuCreator.gCellSize + 6;
 
-        System.out.println(menuBar.getBounds().getHeight());
+        int menuBarHeight = menuBar.getPreferredSize().height;
+        menuBar.setPreferredSize(new Dimension(windowSize, menuBarHeight));
+        int windowHeight = windowSize+menuBarHeight;
+        panel.setPreferredSize(new Dimension(windowSize, windowSize));
+
+        menuBar.setBounds(0, 0, menuBar.getPreferredSize().width, menuBar.getPreferredSize().height);
+        panel.setBounds(0, menuBarHeight, panel.getPreferredSize().width, panel.getPreferredSize().height+1);
 
         SwingUtilities.invokeLater(() -> {
-            this.getContentPane().setPreferredSize(new Dimension(windowSize, windowSize+23));
+            this.getContentPane().setPreferredSize(new Dimension(windowSize, windowHeight));
             this.pack();
-            this.setResizable(false);
+            this.setVisible(true);
 
             panel.addMouseListener(sudokuCreator);
             panel.addMouseMotionListener(sudokuCreator);
             this.addKeyListener(sudokuCreator);
         });
+
+
+    }
+
+    private void print(Object toPrint) {
+        System.out.println(toPrint);
     }
 
     private void generateMenuBar(){
