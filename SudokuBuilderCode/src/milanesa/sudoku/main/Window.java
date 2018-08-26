@@ -76,11 +76,6 @@ public class Window extends JFrame {
         menuBar.add(actionTab);
         actionTab.addActionListener(sudokuCreator);
 
-        JMenuItem randomizeItem = new JMenuItem("Randomize Grid"); //Randomize item.
-        randomizeItem.setActionCommand("randomize_all");
-        randomizeItem.addActionListener(sudokuCreator);
-        actionTab.add(randomizeItem);
-
         menuItemGenerate = new JMenuItem("Generate Valid Grid"); //Generate valid grid item.
         menuItemGenerate.setActionCommand("generate");
         menuItemGenerate.addActionListener(sudokuCreator);

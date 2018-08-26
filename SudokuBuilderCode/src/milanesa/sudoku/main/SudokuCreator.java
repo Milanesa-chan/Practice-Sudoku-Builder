@@ -18,7 +18,7 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
     private JPanel panel;
     private final char[] permittedInputs = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '0'};
     private Thread currentGenerationThread;
-    public static SudokuCreator currentSudokuCreatorObj;
+    private static SudokuCreator currentSudokuCreatorObj;
     private JMenuItem menuItemGenerate, menuItemGenerateCont;
     private final int maxTries = 1000000;
 
@@ -32,7 +32,7 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
         currentSudokuCreatorObj = this;
     }
 
-    public void updateGrid(){
+    private void updateGrid(){
         resetRepeatedCells();
         checkRepeatedCells();
     }
@@ -113,7 +113,7 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
     }
 
     //Randomization/automation methods:
-    public void randomizeCells(){
+    private void randomizeCells(){
         Random r = new Random();
 
         for(Cell[] cc : fullGrid){
@@ -174,8 +174,14 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
                                     if(optionPaintWhileGenerating) panel.repaint();
                                     tries++;
                                 }
+                                if(!generating){
+                                    break;
+                                }
                                 if(isGridRepeated()) break;
                                 totalTries += tries;
+                            }
+                            if(!generating){
+                                break;
                             }
 
                         }
@@ -184,6 +190,7 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
                             Window.currentWindowObj.menuItemGenerate.setText("Generate Valid Grid");
                         }
                         generating = false;
+                        Window.currentWindowObj.menuItemGenerateCont.setEnabled(true);
                         panel.repaint();
                     }catch(Exception e){e.printStackTrace();}
                 });
@@ -377,34 +384,45 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
         menuItemGenerate = Window.currentWindowObj.menuItemGenerate;
         menuItemGenerateCont = Window.currentWindowObj.menuItemGenerateCont;
 
-        if(e.getActionCommand().equals("randomize_all")){
-            randomizeCells();
-        }else if(e.getActionCommand().equals("generate")) {
-            if(generating){
-                generating = false;
-                menuItemGenerate.setText("Generate Valid Grid");
-            }else{
-                generateValidGrid(0);
-                menuItemGenerate.setText("Stop Generating");
-            }
-        }else if(e.getActionCommand().equals("generate_continuous")){
-            if(generatingCont){
-                menuItemGenerate.setEnabled(true);
-                generatingCont = false;
-                menuItemGenerateCont.setText("Generate Valid Grids (Continuous)");
-            }else{
-                menuItemGenerate.setEnabled(false);
-                menuItemGenerateCont.setText("Stop Generating (Continuous)");
-                generateContinuously();
-            }
-        }else if(e.getActionCommand().equals("seed_generate")){
-            JTextField seedTextField = (JTextField)e.getSource();
-            try {
-                generateValidGrid(Long.valueOf(seedTextField.getText()));
-            }catch(NumberFormatException ex){System.out.println("Seed must be an 8 byte number");}
-        }else if(e.getActionCommand().equals("option_paint_generating")){
-            JCheckBox checkbox = (JCheckBox)e.getSource();
-            optionPaintWhileGenerating = checkbox.isSelected();
+        switch (e.getActionCommand()) {
+            case "randomize_all":
+                randomizeCells();
+                break;
+            case "generate":
+                if (generating) {
+                    menuItemGenerateCont.setEnabled(true);
+                    generating = false;
+                    menuItemGenerate.setText("Generate Valid Grid");
+                } else {
+                    menuItemGenerateCont.setEnabled(false);
+                    generateValidGrid(0);
+                    menuItemGenerate.setText("Stop Generating");
+                }
+                break;
+            case "generate_continuous":
+                if (generatingCont) {
+                    menuItemGenerate.setEnabled(true);
+                    generatingCont = false;
+                    generating = false;
+                    menuItemGenerateCont.setText("Generate Valid Grids (Continuous)");
+                } else {
+                    menuItemGenerate.setEnabled(false);
+                    menuItemGenerateCont.setText("Stop Generating (Continuous)");
+                    generateContinuously();
+                }
+                break;
+            case "seed_generate":
+                JTextField seedTextField = (JTextField) e.getSource();
+                try {
+                    generateValidGrid(Long.valueOf(seedTextField.getText()));
+                } catch (NumberFormatException ex) {
+                    System.out.println("Seed must be an 8 byte number");
+                }
+                break;
+            case "option_paint_generating":
+                JCheckBox checkbox = (JCheckBox) e.getSource();
+                optionPaintWhileGenerating = checkbox.isSelected();
+                break;
         }
         System.out.println(e.getActionCommand());
     }
