@@ -49,8 +49,6 @@ public class Window extends JFrame {
         int windowHeight = windowSize+menuBarHeight;
         panel.setPreferredSize(new Dimension(windowSize, windowSize));
 
-        System.out.println(menuBarHeight + " " + windowHeight + " " + windowSize);
-
         menuBar.setBounds(0, 0, menuBar.getPreferredSize().width, menuBar.getPreferredSize().height);
         panel.setBounds(0, menuBarHeight, panel.getPreferredSize().width, panel.getPreferredSize().height+1);
 
@@ -62,9 +60,6 @@ public class Window extends JFrame {
             panel.addMouseListener(sudokuCreator);
             panel.addMouseMotionListener(sudokuCreator);
             this.addKeyListener(sudokuCreator);
-
-            System.out.println(this.getContentPane().getPreferredSize());
-            System.out.println(this.getPreferredSize());
         });
 
 
