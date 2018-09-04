@@ -75,6 +75,5 @@ public class Cell {
         int newContent = cell.getContent();
         cell.changeContent(this.content);
         this.changeContent(newContent);
-
     }
 }
