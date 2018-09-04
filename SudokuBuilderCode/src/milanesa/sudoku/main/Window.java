@@ -9,9 +9,10 @@ public class Window extends JFrame {
     private SudokuCreator sudokuCreator;
     private JMenuBar menuBar;
     public static void main(String[] args){new Window();}
-    public JMenuItem menuItemGenerate, menuItemGenerateCont;
+    public JMenuItem menuItemGenerate;
     public JTextField menuSeedField;
     public static Window currentWindowObj;
+    public JLabel bottomLabel;
 
     private Window(){
         currentWindowObj = this;
@@ -38,15 +39,19 @@ public class Window extends JFrame {
         sudokuCreator = new SudokuCreator(panel);
 
         generateMenuBar();
+        bottomLabel = new JLabel("Welcome to Sudoku Helper.");
 
         add(menuBar, BorderLayout.NORTH);
         add(panel, BorderLayout.SOUTH);
+        add(bottomLabel, BorderLayout.SOUTH);
 
         int windowSize = 4* SudokuCreator.gQuadLineThickness + 9*SudokuCreator.gCellSize + 6;
 
         int menuBarHeight = menuBar.getPreferredSize().height;
         menuBar.setPreferredSize(new Dimension(windowSize, menuBarHeight));
-        int windowHeight = windowSize+menuBarHeight;
+        int bottomLabelHeight = bottomLabel.getPreferredSize().height;
+        bottomLabel.setPreferredSize(new Dimension(windowSize, bottomLabelHeight));
+        int windowHeight = windowSize+menuBarHeight+bottomLabelHeight;
         panel.setPreferredSize(new Dimension(windowSize, windowSize));
 
         menuBar.setBounds(0, 0, menuBar.getPreferredSize().width, menuBar.getPreferredSize().height);
@@ -81,18 +86,10 @@ public class Window extends JFrame {
         menuItemGenerate.addActionListener(sudokuCreator);
         actionTab.add(menuItemGenerate);
 
-        menuItemGenerateCont = new JMenuItem("Generate Valid Grids (Continuous)"); //Generate valid grid continuously item.
-        menuItemGenerateCont.setActionCommand("generate_continuous");
-        menuItemGenerateCont.addActionListener(sudokuCreator);
-        actionTab.add(menuItemGenerateCont);
+        //menuGenerateWithSeed = new JMenu("Generate Valid Grid With Seed:"); //Generate valid grid with seed menu.
+        //actionTab.add(menuGenerateWithSeed);
 
-        JMenu menuGenerateWithSeed = new JMenu("Generate Valid Grid With Seed:"); //Generate valid grid with seed menu.
-        actionTab.add(menuGenerateWithSeed);
 
-        menuSeedField = new JTextField(20); //Seed text field.
-        menuSeedField.setActionCommand("seed_generate");
-        menuSeedField.addActionListener(sudokuCreator);
-        menuGenerateWithSeed.add(menuSeedField);
 
         JMenu optionsTab = new JMenu("Options"); //Options tab.
         menuBar.add(optionsTab);
@@ -102,6 +99,20 @@ public class Window extends JFrame {
         optionPaintGenerating.addActionListener(sudokuCreator);
         optionPaintGenerating.setSelected(true);
         optionsTab.add(optionPaintGenerating);
+
+        JCheckBox optionRandomSeed = new JCheckBox("Randomize Seed");
+        optionRandomSeed.setActionCommand("random_seed");
+        optionRandomSeed.addActionListener(sudokuCreator);
+        optionRandomSeed.setSelected(true);
+        optionsTab.add(optionRandomSeed);
+
+        JMenu seedTab = new JMenu("Seed:");
+        optionsTab.add(seedTab);
+
+        menuSeedField = new JTextField(20); //Seed text field.
+        menuSeedField.setActionCommand("seed_field");
+        menuSeedField.addActionListener(sudokuCreator);
+        seedTab.add(menuSeedField);
     }
 
     private void paintPanel(Graphics g){
@@ -136,5 +147,7 @@ public class Window extends JFrame {
         }
     }
 
-
+    public void setLabelMessage(String message){
+        bottomLabel.setText(message);
+    }
 }
