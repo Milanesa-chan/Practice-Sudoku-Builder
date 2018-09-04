@@ -22,7 +22,7 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
     private JMenuItem menuItemGenerate;
     private final int maxTries = 1000000;
     private long currentSeed = 12345;
-    private int ammountOfBlanks = 64;
+    private int amountOfBlanks = 64;
     private Window windowObj;
 
     SudokuCreator(JPanel panel){
@@ -193,16 +193,13 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
                     for (Cell c : cc) {
                         if(blanked>=toBlank) {
                             break;
+                        }else {
+                            //This next if statement has a [toBlank] percent chance of success. This to make sure cells are blanked in an evenly distributed manner.
+                            if (rand.nextInt(81) < toBlank) {
+                                c.changeContent(0);
+                                blanked++;
+                            }
                         }
-
-                        //This next if statement has a [toBlank] percent chance of success. This to make sure cells are blanked in an evenly distributed manner.
-                        if(rand.nextInt(81)<toBlank){
-                            c.changeContent(0);
-                            blanked++;
-                        }
-                    }
-                    if(blanked>=toBlank) {
-                        break;
                     }
                 }
             }
@@ -370,6 +367,8 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
         }
     }
 
+    //Menu items methods.
+
     public void actionPerformed(ActionEvent e) {
         //Sends the event to the different subgroups of menus.
         actionTabActions(e);
@@ -399,9 +398,9 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
             case "generate_blanks":
                 if(!generating) {
                     if (optionRandomSeed) {
-                        generateBlankSpaces(0, ammountOfBlanks);
+                        generateBlankSpaces(0, amountOfBlanks);
                     } else {
-                        generateBlankSpaces(currentSeed, ammountOfBlanks);
+                        generateBlankSpaces(currentSeed, amountOfBlanks);
                     }
                 }
                 break;
