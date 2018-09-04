@@ -22,6 +22,7 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
     private JMenuItem menuItemGenerate;
     private final int maxTries = 1000000;
     private long currentSeed = 12345;
+    private int ammountOfBlanks = 64;
     private Window windowObj;
 
     SudokuCreator(JPanel panel){
@@ -136,9 +137,9 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
                             if (seedForThread != 0){
                                 rand.setSeed(seedForThread);
 
-                                windowObj.setLabelMessage("Generating grid with seed: "+seedForThread);
+                                windowObj.setLabelMessage("Generating grid with seed: "+seedForThread+"...");
                             }else{
-                                windowObj.setLabelMessage("Generating grid with random seed.");
+                                windowObj.setLabelMessage("Generating grid with random seed...");
                             }
 
                             for (CellGroup g : cellRows) {
@@ -175,6 +176,38 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
                     }catch(Exception e){e.printStackTrace();}
                 });
         currentGenerationThread.start();
+    }
+
+    private void generateBlankSpaces(long seed, int toBlank){
+        new Thread(() -> {
+            Random rand = new Random();
+            int blanked = 0;
+            if(seed != 0){
+                rand.setSeed(seed);
+                windowObj.setLabelMessage("Generating blank spaces with seed: "+seed+"...");
+            }else{
+                windowObj.setLabelMessage("Generating blank spaces randomly...");
+            }
+            while(blanked < toBlank){
+                for (Cell[] cc : fullGrid) {
+                    for (Cell c : cc) {
+                        if(blanked>=toBlank) {
+                            break;
+                        }
+
+                        //This next if statement has a [toBlank] percent chance of success. This to make sure cells are blanked in an evenly distributed manner.
+                        if(rand.nextInt(81)<toBlank){
+                            c.changeContent(0);
+                            blanked++;
+                        }
+                    }
+                    if(blanked>=toBlank) {
+                        break;
+                    }
+                }
+            }
+            windowObj.setLabelMessage("Finished generating blank spaces.");
+        }).start();
     }
 
     //Cell input checking and selection methods:
@@ -361,6 +394,15 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
                         generateValidGrid(currentSeed);
                     }
                     menuItemGenerate.setText("Stop Generating");
+                }
+                break;
+            case "generate_blanks":
+                if(!generating) {
+                    if (optionRandomSeed) {
+                        generateBlankSpaces(0, ammountOfBlanks);
+                    } else {
+                        generateBlankSpaces(currentSeed, ammountOfBlanks);
+                    }
                 }
                 break;
         }

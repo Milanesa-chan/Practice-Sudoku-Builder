@@ -9,7 +9,7 @@ public class Window extends JFrame {
     private SudokuCreator sudokuCreator;
     private JMenuBar menuBar;
     public static void main(String[] args){new Window();}
-    public JMenuItem menuItemGenerate;
+    public JMenuItem menuItemGenerate, menuItemGenerateBlankSpaces;
     public JTextField menuSeedField;
     public static Window currentWindowObj;
     public JLabel bottomLabel;
@@ -86,10 +86,10 @@ public class Window extends JFrame {
         menuItemGenerate.addActionListener(sudokuCreator);
         actionTab.add(menuItemGenerate);
 
-        //menuGenerateWithSeed = new JMenu("Generate Valid Grid With Seed:"); //Generate valid grid with seed menu.
-        //actionTab.add(menuGenerateWithSeed);
-
-
+        menuItemGenerateBlankSpaces = new JMenuItem("Generate Blank Spaces");
+        menuItemGenerateBlankSpaces.setActionCommand("generate_blanks");
+        menuItemGenerateBlankSpaces.addActionListener(sudokuCreator);
+        actionTab.add(menuItemGenerateBlankSpaces);
 
         JMenu optionsTab = new JMenu("Options"); //Options tab.
         menuBar.add(optionsTab);
