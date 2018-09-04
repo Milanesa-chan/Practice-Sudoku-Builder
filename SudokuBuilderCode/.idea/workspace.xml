@@ -16,12 +16,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="Window.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="89" column="56" lean-forward="true" selection-start-line="89" selection-start-column="56" selection-end-line="89" selection-end-column="56" />
+            <state relative-caret-position="624">
+              <caret line="89" column="56" selection-start-line="89" selection-start-column="56" selection-end-line="89" selection-end-column="56" />
               <folding>
                 <element signature="method#getCurrentSeed#0;class#Window#0" />
                 <element signature="method#createWindow#0;class#Window#0" />
@@ -34,41 +34,10 @@
       <file leaf-file-name="SudokuCreator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/SudokuCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="406" column="22" lean-forward="true" selection-start-line="406" selection-start-column="22" selection-end-line="406" selection-end-column="22" />
+            <state relative-caret-position="200">
+              <caret line="353" column="44" lean-forward="true" selection-start-line="353" selection-start-column="44" selection-end-line="353" selection-end-column="44" />
               <folding>
-                <element signature="e#1010#1283#0" />
-                <element signature="e#1289#1381#0" />
-                <element signature="e#1387#1543#0" />
-                <element signature="e#1549#1785#0" />
-                <element signature="e#1791#2535#0" />
-                <element signature="e#2541#2848#0" />
-                <element signature="e#2854#3020#0" />
-                <element signature="e#3026#3625#0" />
-                <element signature="e#3704#6334#0" />
-                <element signature="e#6378#6916#0" />
-                <element signature="e#6455#6900#0" />
-                <element signature="e#6340#6698#0" />
-                <element signature="e#6704#6957#0" />
-                <element signature="e#6963#7125#0" />
-                <element signature="e#7131#7379#0" />
-                <element signature="e#7385#7594#0" />
-                <element signature="e#7600#7957#0" />
-                <element signature="e#7963#8299#0" />
-                <element signature="e#8305#8632#0" />
-                <element signature="e#8638#8698#0" />
-                <element signature="e#8704#8964#0" />
-                <element signature="e#8970#9165#0" />
-                <element signature="e#9171#9215#0" />
-                <element signature="e#9221#9267#0" />
-                <element signature="e#9273#9517#0" />
-                <element signature="e#9523#9571#0" />
-                <element signature="e#9577#9624#0" />
-                <element signature="e#9630#9676#0" />
-                <element signature="e#9682#9729#0" />
-                <element signature="e#9735#9882#0" />
-                <element signature="e#9888#10110#0" />
-                <element signature="e#10887#11876#0" />
+                <element signature="e#11404#12516#0" />
               </folding>
             </state>
           </provider>
@@ -78,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/generics/CellGroup.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
-              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#223#224#0" expanded="true" />
@@ -169,24 +138,6 @@
               <item name="SudokuBuilderCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="SudokuBuilderCode" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SudokuBuilderCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuBuilderCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SudokuBuilderCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuBuilderCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SudokuBuilderCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuBuilderCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -196,11 +147,16 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="Sudoku Builder" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -316,12 +272,12 @@
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51770836" side_tool="true" weight="0.32979852" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48229167" visible="true" weight="0.23093683" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48229167" visible="true" weight="0.24945533" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.195629" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19989339" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -357,29 +313,29 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48229167" visible="true" weight="0.32943678" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18020834" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48229167" visible="true" weight="0.23093683" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.195629" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997879" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51770836" side_tool="true" weight="0.32979852" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49375" weight="0.32943678" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49375" weight="0.32897604" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
     </layout-to-restore>
@@ -454,38 +410,7 @@
         <state relative-caret-position="2618">
           <caret line="154" column="42" selection-start-line="154" selection-start-column="42" selection-end-line="154" selection-end-column="42" />
           <folding>
-            <element signature="e#1010#1283#0" />
-            <element signature="e#1289#1381#0" />
-            <element signature="e#1387#1543#0" />
-            <element signature="e#1549#1785#0" />
-            <element signature="e#1791#2535#0" />
-            <element signature="e#2541#2848#0" />
-            <element signature="e#2854#3020#0" />
-            <element signature="e#3026#3625#0" />
-            <element signature="e#3704#6334#0" />
-            <element signature="e#6378#6916#0" />
-            <element signature="e#6455#6900#0" />
-            <element signature="e#6340#6698#0" />
-            <element signature="e#6704#6957#0" />
-            <element signature="e#6963#7125#0" />
-            <element signature="e#7131#7379#0" />
-            <element signature="e#7385#7594#0" />
-            <element signature="e#7600#7957#0" />
-            <element signature="e#7963#8299#0" />
-            <element signature="e#8305#8632#0" />
-            <element signature="e#8638#8698#0" />
-            <element signature="e#8704#8964#0" />
-            <element signature="e#8970#9165#0" />
-            <element signature="e#9171#9215#0" />
-            <element signature="e#9221#9267#0" />
-            <element signature="e#9273#9517#0" />
-            <element signature="e#9523#9571#0" />
-            <element signature="e#9577#9624#0" />
-            <element signature="e#9630#9676#0" />
-            <element signature="e#9682#9729#0" />
-            <element signature="e#9735#9882#0" />
-            <element signature="e#9888#10110#0" />
-            <element signature="e#10887#11876#0" />
+            <element signature="e#11404#12516#0" />
           </folding>
         </state>
       </provider>
@@ -547,38 +472,7 @@
         <state relative-caret-position="2023">
           <caret line="119" column="65" selection-start-line="119" selection-start-column="65" selection-end-line="119" selection-end-column="65" />
           <folding>
-            <element signature="e#1010#1283#0" />
-            <element signature="e#1289#1381#0" />
-            <element signature="e#1387#1543#0" />
-            <element signature="e#1549#1785#0" />
-            <element signature="e#1791#2535#0" />
-            <element signature="e#2541#2848#0" />
-            <element signature="e#2854#3020#0" />
-            <element signature="e#3026#3625#0" />
-            <element signature="e#3704#6334#0" />
-            <element signature="e#6378#6916#0" />
-            <element signature="e#6455#6900#0" />
-            <element signature="e#6340#6698#0" />
-            <element signature="e#6704#6957#0" />
-            <element signature="e#6963#7125#0" />
-            <element signature="e#7131#7379#0" />
-            <element signature="e#7385#7594#0" />
-            <element signature="e#7600#7957#0" />
-            <element signature="e#7963#8299#0" />
-            <element signature="e#8305#8632#0" />
-            <element signature="e#8638#8698#0" />
-            <element signature="e#8704#8964#0" />
-            <element signature="e#8970#9165#0" />
-            <element signature="e#9171#9215#0" />
-            <element signature="e#9221#9267#0" />
-            <element signature="e#9273#9517#0" />
-            <element signature="e#9523#9571#0" />
-            <element signature="e#9577#9624#0" />
-            <element signature="e#9630#9676#0" />
-            <element signature="e#9682#9729#0" />
-            <element signature="e#9735#9882#0" />
-            <element signature="e#9888#10110#0" />
-            <element signature="e#10887#11876#0" />
+            <element signature="e#11404#12516#0" />
           </folding>
         </state>
       </provider>
@@ -640,38 +534,7 @@
         <state relative-caret-position="850">
           <caret line="119" column="65" lean-forward="true" selection-start-line="119" selection-start-column="65" selection-end-line="119" selection-end-column="65" />
           <folding>
-            <element signature="e#1010#1283#0" />
-            <element signature="e#1289#1381#0" />
-            <element signature="e#1387#1543#0" />
-            <element signature="e#1549#1785#0" />
-            <element signature="e#1791#2535#0" />
-            <element signature="e#2541#2848#0" />
-            <element signature="e#2854#3020#0" />
-            <element signature="e#3026#3625#0" />
-            <element signature="e#3704#6334#0" />
-            <element signature="e#6378#6916#0" />
-            <element signature="e#6455#6900#0" />
-            <element signature="e#6340#6698#0" />
-            <element signature="e#6704#6957#0" />
-            <element signature="e#6963#7125#0" />
-            <element signature="e#7131#7379#0" />
-            <element signature="e#7385#7594#0" />
-            <element signature="e#7600#7957#0" />
-            <element signature="e#7963#8299#0" />
-            <element signature="e#8305#8632#0" />
-            <element signature="e#8638#8698#0" />
-            <element signature="e#8704#8964#0" />
-            <element signature="e#8970#9165#0" />
-            <element signature="e#9171#9215#0" />
-            <element signature="e#9221#9267#0" />
-            <element signature="e#9273#9517#0" />
-            <element signature="e#9523#9571#0" />
-            <element signature="e#9577#9624#0" />
-            <element signature="e#9630#9676#0" />
-            <element signature="e#9682#9729#0" />
-            <element signature="e#9735#9882#0" />
-            <element signature="e#9888#10110#0" />
-            <element signature="e#10887#11876#0" />
+            <element signature="e#11404#12516#0" />
           </folding>
         </state>
       </provider>
@@ -734,38 +597,7 @@
         <state relative-caret-position="1972">
           <caret line="116" column="37" lean-forward="true" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="37" />
           <folding>
-            <element signature="e#1010#1283#0" />
-            <element signature="e#1289#1381#0" />
-            <element signature="e#1387#1543#0" />
-            <element signature="e#1549#1785#0" />
-            <element signature="e#1791#2535#0" />
-            <element signature="e#2541#2848#0" />
-            <element signature="e#2854#3020#0" />
-            <element signature="e#3026#3625#0" />
-            <element signature="e#3704#6334#0" />
-            <element signature="e#6378#6916#0" />
-            <element signature="e#6455#6900#0" />
-            <element signature="e#6340#6698#0" />
-            <element signature="e#6704#6957#0" />
-            <element signature="e#6963#7125#0" />
-            <element signature="e#7131#7379#0" />
-            <element signature="e#7385#7594#0" />
-            <element signature="e#7600#7957#0" />
-            <element signature="e#7963#8299#0" />
-            <element signature="e#8305#8632#0" />
-            <element signature="e#8638#8698#0" />
-            <element signature="e#8704#8964#0" />
-            <element signature="e#8970#9165#0" />
-            <element signature="e#9171#9215#0" />
-            <element signature="e#9221#9267#0" />
-            <element signature="e#9273#9517#0" />
-            <element signature="e#9523#9571#0" />
-            <element signature="e#9577#9624#0" />
-            <element signature="e#9630#9676#0" />
-            <element signature="e#9682#9729#0" />
-            <element signature="e#9735#9882#0" />
-            <element signature="e#9888#10110#0" />
-            <element signature="e#10887#11876#0" />
+            <element signature="e#11404#12516#0" />
           </folding>
         </state>
       </provider>
@@ -802,38 +634,7 @@
         <state relative-caret-position="4539">
           <caret line="267" column="8" selection-start-line="267" selection-start-column="8" selection-end-line="267" selection-end-column="8" />
           <folding>
-            <element signature="e#1010#1283#0" />
-            <element signature="e#1289#1381#0" />
-            <element signature="e#1387#1543#0" />
-            <element signature="e#1549#1785#0" />
-            <element signature="e#1791#2535#0" />
-            <element signature="e#2541#2848#0" />
-            <element signature="e#2854#3020#0" />
-            <element signature="e#3026#3625#0" />
-            <element signature="e#3704#6334#0" />
-            <element signature="e#6378#6916#0" />
-            <element signature="e#6455#6900#0" />
-            <element signature="e#6340#6698#0" />
-            <element signature="e#6704#6957#0" />
-            <element signature="e#6963#7125#0" />
-            <element signature="e#7131#7379#0" />
-            <element signature="e#7385#7594#0" />
-            <element signature="e#7600#7957#0" />
-            <element signature="e#7963#8299#0" />
-            <element signature="e#8305#8632#0" />
-            <element signature="e#8638#8698#0" />
-            <element signature="e#8704#8964#0" />
-            <element signature="e#8970#9165#0" />
-            <element signature="e#9171#9215#0" />
-            <element signature="e#9221#9267#0" />
-            <element signature="e#9273#9517#0" />
-            <element signature="e#9523#9571#0" />
-            <element signature="e#9577#9624#0" />
-            <element signature="e#9630#9676#0" />
-            <element signature="e#9682#9729#0" />
-            <element signature="e#9735#9882#0" />
-            <element signature="e#9888#10110#0" />
-            <element signature="e#10887#11876#0" />
+            <element signature="e#11404#12516#0" />
           </folding>
         </state>
       </provider>
@@ -878,38 +679,7 @@
         <state relative-caret-position="153">
           <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
           <folding>
-            <element signature="e#1010#1283#0" />
-            <element signature="e#1289#1381#0" />
-            <element signature="e#1387#1543#0" />
-            <element signature="e#1549#1785#0" />
-            <element signature="e#1791#2535#0" />
-            <element signature="e#2541#2848#0" />
-            <element signature="e#2854#3020#0" />
-            <element signature="e#3026#3625#0" />
-            <element signature="e#3704#6334#0" />
-            <element signature="e#6378#6916#0" />
-            <element signature="e#6455#6900#0" />
-            <element signature="e#6340#6698#0" />
-            <element signature="e#6704#6957#0" />
-            <element signature="e#6963#7125#0" />
-            <element signature="e#7131#7379#0" />
-            <element signature="e#7385#7594#0" />
-            <element signature="e#7600#7957#0" />
-            <element signature="e#7963#8299#0" />
-            <element signature="e#8305#8632#0" />
-            <element signature="e#8638#8698#0" />
-            <element signature="e#8704#8964#0" />
-            <element signature="e#8970#9165#0" />
-            <element signature="e#9171#9215#0" />
-            <element signature="e#9221#9267#0" />
-            <element signature="e#9273#9517#0" />
-            <element signature="e#9523#9571#0" />
-            <element signature="e#9577#9624#0" />
-            <element signature="e#9630#9676#0" />
-            <element signature="e#9682#9729#0" />
-            <element signature="e#9735#9882#0" />
-            <element signature="e#9888#10110#0" />
-            <element signature="e#10887#11876#0" />
+            <element signature="e#11404#12516#0" />
           </folding>
         </state>
       </provider>
@@ -969,38 +739,7 @@
         <state relative-caret-position="272">
           <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
           <folding>
-            <element signature="e#1010#1283#0" />
-            <element signature="e#1289#1381#0" />
-            <element signature="e#1387#1543#0" />
-            <element signature="e#1549#1785#0" />
-            <element signature="e#1791#2535#0" />
-            <element signature="e#2541#2848#0" />
-            <element signature="e#2854#3020#0" />
-            <element signature="e#3026#3625#0" />
-            <element signature="e#3704#6334#0" />
-            <element signature="e#6378#6916#0" />
-            <element signature="e#6455#6900#0" />
-            <element signature="e#6340#6698#0" />
-            <element signature="e#6704#6957#0" />
-            <element signature="e#6963#7125#0" />
-            <element signature="e#7131#7379#0" />
-            <element signature="e#7385#7594#0" />
-            <element signature="e#7600#7957#0" />
-            <element signature="e#7963#8299#0" />
-            <element signature="e#8305#8632#0" />
-            <element signature="e#8638#8698#0" />
-            <element signature="e#8704#8964#0" />
-            <element signature="e#8970#9165#0" />
-            <element signature="e#9171#9215#0" />
-            <element signature="e#9221#9267#0" />
-            <element signature="e#9273#9517#0" />
-            <element signature="e#9523#9571#0" />
-            <element signature="e#9577#9624#0" />
-            <element signature="e#9630#9676#0" />
-            <element signature="e#9682#9729#0" />
-            <element signature="e#9735#9882#0" />
-            <element signature="e#9888#10110#0" />
-            <element signature="e#10887#11876#0" />
+            <element signature="e#11404#12516#0" />
           </folding>
         </state>
       </provider>
@@ -1100,38 +839,7 @@
         <state relative-caret-position="272">
           <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
           <folding>
-            <element signature="e#1010#1283#0" />
-            <element signature="e#1289#1381#0" />
-            <element signature="e#1387#1543#0" />
-            <element signature="e#1549#1785#0" />
-            <element signature="e#1791#2535#0" />
-            <element signature="e#2541#2848#0" />
-            <element signature="e#2854#3020#0" />
-            <element signature="e#3026#3625#0" />
-            <element signature="e#3704#6334#0" />
-            <element signature="e#6378#6916#0" />
-            <element signature="e#6455#6900#0" />
-            <element signature="e#6340#6698#0" />
-            <element signature="e#6704#6957#0" />
-            <element signature="e#6963#7125#0" />
-            <element signature="e#7131#7379#0" />
-            <element signature="e#7385#7594#0" />
-            <element signature="e#7600#7957#0" />
-            <element signature="e#7963#8299#0" />
-            <element signature="e#8305#8632#0" />
-            <element signature="e#8638#8698#0" />
-            <element signature="e#8704#8964#0" />
-            <element signature="e#8970#9165#0" />
-            <element signature="e#9171#9215#0" />
-            <element signature="e#9221#9267#0" />
-            <element signature="e#9273#9517#0" />
-            <element signature="e#9523#9571#0" />
-            <element signature="e#9577#9624#0" />
-            <element signature="e#9630#9676#0" />
-            <element signature="e#9682#9729#0" />
-            <element signature="e#9735#9882#0" />
-            <element signature="e#9888#10110#0" />
-            <element signature="e#10887#11876#0" />
+            <element signature="e#11404#12516#0" />
           </folding>
         </state>
       </provider>
@@ -1192,38 +900,7 @@
         <state relative-caret-position="3434">
           <caret line="202" column="26" lean-forward="true" selection-start-line="202" selection-start-column="26" selection-end-line="202" selection-end-column="26" />
           <folding>
-            <element signature="e#1010#1283#0" />
-            <element signature="e#1289#1381#0" />
-            <element signature="e#1387#1543#0" />
-            <element signature="e#1549#1785#0" />
-            <element signature="e#1791#2535#0" />
-            <element signature="e#2541#2848#0" />
-            <element signature="e#2854#3020#0" />
-            <element signature="e#3026#3625#0" />
-            <element signature="e#3704#6334#0" />
-            <element signature="e#6378#6916#0" />
-            <element signature="e#6455#6900#0" />
-            <element signature="e#6340#6698#0" />
-            <element signature="e#6704#6957#0" />
-            <element signature="e#6963#7125#0" />
-            <element signature="e#7131#7379#0" />
-            <element signature="e#7385#7594#0" />
-            <element signature="e#7600#7957#0" />
-            <element signature="e#7963#8299#0" />
-            <element signature="e#8305#8632#0" />
-            <element signature="e#8638#8698#0" />
-            <element signature="e#8704#8964#0" />
-            <element signature="e#8970#9165#0" />
-            <element signature="e#9171#9215#0" />
-            <element signature="e#9221#9267#0" />
-            <element signature="e#9273#9517#0" />
-            <element signature="e#9523#9571#0" />
-            <element signature="e#9577#9624#0" />
-            <element signature="e#9630#9676#0" />
-            <element signature="e#9682#9729#0" />
-            <element signature="e#9735#9882#0" />
-            <element signature="e#9888#10110#0" />
-            <element signature="e#10887#11876#0" />
+            <element signature="e#11404#12516#0" />
           </folding>
         </state>
       </provider>
@@ -1235,33 +912,6 @@
     <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/SudokuAtomatizator.java" />
     <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/Object.java" />
     <entry file="file://$PROJECT_DIR$/hs_err_pid37500.log" />
-    <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/generics/CellGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#223#224#0" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="method#updateRepeatedCells#0;class#CellGroup#0" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="89" column="56" lean-forward="true" selection-start-line="89" selection-start-column="56" selection-end-line="89" selection-end-column="56" />
-          <folding>
-            <element signature="method#getCurrentSeed#0;class#Window#0" />
-            <element signature="method#createWindow#0;class#Window#0" />
-            <element signature="method#paintLines#0;class#Window#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/generics/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -1286,43 +936,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/generics/CellGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="method#updateRepeatedCells#0;class#CellGroup#0" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="89" column="56" selection-start-line="89" selection-start-column="56" selection-end-line="89" selection-end-column="56" />
+          <folding>
+            <element signature="method#getCurrentSeed#0;class#Window#0" />
+            <element signature="method#createWindow#0;class#Window#0" />
+            <element signature="method#paintLines#0;class#Window#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/SudokuCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="406" column="22" lean-forward="true" selection-start-line="406" selection-start-column="22" selection-end-line="406" selection-end-column="22" />
+        <state relative-caret-position="200">
+          <caret line="353" column="44" lean-forward="true" selection-start-line="353" selection-start-column="44" selection-end-line="353" selection-end-column="44" />
           <folding>
-            <element signature="e#1010#1283#0" />
-            <element signature="e#1289#1381#0" />
-            <element signature="e#1387#1543#0" />
-            <element signature="e#1549#1785#0" />
-            <element signature="e#1791#2535#0" />
-            <element signature="e#2541#2848#0" />
-            <element signature="e#2854#3020#0" />
-            <element signature="e#3026#3625#0" />
-            <element signature="e#3704#6334#0" />
-            <element signature="e#6378#6916#0" />
-            <element signature="e#6455#6900#0" />
-            <element signature="e#6340#6698#0" />
-            <element signature="e#6704#6957#0" />
-            <element signature="e#6963#7125#0" />
-            <element signature="e#7131#7379#0" />
-            <element signature="e#7385#7594#0" />
-            <element signature="e#7600#7957#0" />
-            <element signature="e#7963#8299#0" />
-            <element signature="e#8305#8632#0" />
-            <element signature="e#8638#8698#0" />
-            <element signature="e#8704#8964#0" />
-            <element signature="e#8970#9165#0" />
-            <element signature="e#9171#9215#0" />
-            <element signature="e#9221#9267#0" />
-            <element signature="e#9273#9517#0" />
-            <element signature="e#9523#9571#0" />
-            <element signature="e#9577#9624#0" />
-            <element signature="e#9630#9676#0" />
-            <element signature="e#9682#9729#0" />
-            <element signature="e#9735#9882#0" />
-            <element signature="e#9888#10110#0" />
-            <element signature="e#10887#11876#0" />
+            <element signature="e#11404#12516#0" />
           </folding>
         </state>
       </provider>
@@ -1333,7 +979,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>SudokuBuilder:jar</last-edited>
+          <last-edited>SudokuBuilder.jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

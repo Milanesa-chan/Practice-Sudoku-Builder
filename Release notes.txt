@@ -1,3 +1,0 @@
--Option to generate using a seed.
--Options tab added.
--Changed some menu bar items behaviour.

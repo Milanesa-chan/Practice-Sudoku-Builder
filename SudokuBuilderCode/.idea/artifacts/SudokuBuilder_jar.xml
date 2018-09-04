@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="SudokuBuilder:jar">
-    <output-path>$PROJECT_DIR$/../Current Build</output-path>
+  <artifact type="jar" name="SudokuBuilder.jar">
+    <output-path />
     <root id="archive" name="SudokuBuilder.jar">
       <element id="module-output" name="SudokuBuilder" />
     </root>
