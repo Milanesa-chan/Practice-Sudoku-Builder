@@ -397,10 +397,12 @@ public class SudokuCreator implements KeyListener, MouseMotionListener, MouseLis
                 }
                 break;
             case "generate_blanks":
-                if(optionRandomSeed){
-                    generateBlankSpaces(0, ammountOfBlanks);
-                }else{
-                    generateBlankSpaces(currentSeed, ammountOfBlanks);
+                if(!generating) {
+                    if (optionRandomSeed) {
+                        generateBlankSpaces(0, ammountOfBlanks);
+                    } else {
+                        generateBlankSpaces(currentSeed, ammountOfBlanks);
+                    }
                 }
                 break;
         }

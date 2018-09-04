@@ -34,8 +34,8 @@
       <file leaf-file-name="SudokuCreator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/SudokuCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="208" column="72" selection-start-line="208" selection-start-column="72" selection-end-line="208" selection-end-column="72" />
+            <state relative-caret-position="546">
+              <caret line="406" column="22" lean-forward="true" selection-start-line="406" selection-start-column="22" selection-end-line="406" selection-end-column="22" />
               <folding>
                 <element signature="e#1010#1283#0" />
                 <element signature="e#1289#1381#0" />
@@ -46,6 +46,8 @@
                 <element signature="e#2854#3020#0" />
                 <element signature="e#3026#3625#0" />
                 <element signature="e#3704#6334#0" />
+                <element signature="e#6378#6916#0" />
+                <element signature="e#6455#6900#0" />
                 <element signature="e#6340#6698#0" />
                 <element signature="e#6704#6957#0" />
                 <element signature="e#6963#7125#0" />
@@ -66,7 +68,6 @@
                 <element signature="e#9682#9729#0" />
                 <element signature="e#9735#9882#0" />
                 <element signature="e#9888#10110#0" />
-                <element signature="e#11029#11988#0" />
                 <element signature="e#10887#11876#0" />
               </folding>
             </state>
@@ -462,6 +463,8 @@
             <element signature="e#2854#3020#0" />
             <element signature="e#3026#3625#0" />
             <element signature="e#3704#6334#0" />
+            <element signature="e#6378#6916#0" />
+            <element signature="e#6455#6900#0" />
             <element signature="e#6340#6698#0" />
             <element signature="e#6704#6957#0" />
             <element signature="e#6963#7125#0" />
@@ -482,7 +485,6 @@
             <element signature="e#9682#9729#0" />
             <element signature="e#9735#9882#0" />
             <element signature="e#9888#10110#0" />
-            <element signature="e#11029#11988#0" />
             <element signature="e#10887#11876#0" />
           </folding>
         </state>
@@ -554,6 +556,8 @@
             <element signature="e#2854#3020#0" />
             <element signature="e#3026#3625#0" />
             <element signature="e#3704#6334#0" />
+            <element signature="e#6378#6916#0" />
+            <element signature="e#6455#6900#0" />
             <element signature="e#6340#6698#0" />
             <element signature="e#6704#6957#0" />
             <element signature="e#6963#7125#0" />
@@ -574,7 +578,6 @@
             <element signature="e#9682#9729#0" />
             <element signature="e#9735#9882#0" />
             <element signature="e#9888#10110#0" />
-            <element signature="e#11029#11988#0" />
             <element signature="e#10887#11876#0" />
           </folding>
         </state>
@@ -646,6 +649,8 @@
             <element signature="e#2854#3020#0" />
             <element signature="e#3026#3625#0" />
             <element signature="e#3704#6334#0" />
+            <element signature="e#6378#6916#0" />
+            <element signature="e#6455#6900#0" />
             <element signature="e#6340#6698#0" />
             <element signature="e#6704#6957#0" />
             <element signature="e#6963#7125#0" />
@@ -666,7 +671,6 @@
             <element signature="e#9682#9729#0" />
             <element signature="e#9735#9882#0" />
             <element signature="e#9888#10110#0" />
-            <element signature="e#11029#11988#0" />
             <element signature="e#10887#11876#0" />
           </folding>
         </state>
@@ -739,6 +743,8 @@
             <element signature="e#2854#3020#0" />
             <element signature="e#3026#3625#0" />
             <element signature="e#3704#6334#0" />
+            <element signature="e#6378#6916#0" />
+            <element signature="e#6455#6900#0" />
             <element signature="e#6340#6698#0" />
             <element signature="e#6704#6957#0" />
             <element signature="e#6963#7125#0" />
@@ -759,7 +765,6 @@
             <element signature="e#9682#9729#0" />
             <element signature="e#9735#9882#0" />
             <element signature="e#9888#10110#0" />
-            <element signature="e#11029#11988#0" />
             <element signature="e#10887#11876#0" />
           </folding>
         </state>
@@ -806,6 +811,8 @@
             <element signature="e#2854#3020#0" />
             <element signature="e#3026#3625#0" />
             <element signature="e#3704#6334#0" />
+            <element signature="e#6378#6916#0" />
+            <element signature="e#6455#6900#0" />
             <element signature="e#6340#6698#0" />
             <element signature="e#6704#6957#0" />
             <element signature="e#6963#7125#0" />
@@ -826,7 +833,6 @@
             <element signature="e#9682#9729#0" />
             <element signature="e#9735#9882#0" />
             <element signature="e#9888#10110#0" />
-            <element signature="e#11029#11988#0" />
             <element signature="e#10887#11876#0" />
           </folding>
         </state>
@@ -881,6 +887,8 @@
             <element signature="e#2854#3020#0" />
             <element signature="e#3026#3625#0" />
             <element signature="e#3704#6334#0" />
+            <element signature="e#6378#6916#0" />
+            <element signature="e#6455#6900#0" />
             <element signature="e#6340#6698#0" />
             <element signature="e#6704#6957#0" />
             <element signature="e#6963#7125#0" />
@@ -901,7 +909,6 @@
             <element signature="e#9682#9729#0" />
             <element signature="e#9735#9882#0" />
             <element signature="e#9888#10110#0" />
-            <element signature="e#11029#11988#0" />
             <element signature="e#10887#11876#0" />
           </folding>
         </state>
@@ -971,6 +978,8 @@
             <element signature="e#2854#3020#0" />
             <element signature="e#3026#3625#0" />
             <element signature="e#3704#6334#0" />
+            <element signature="e#6378#6916#0" />
+            <element signature="e#6455#6900#0" />
             <element signature="e#6340#6698#0" />
             <element signature="e#6704#6957#0" />
             <element signature="e#6963#7125#0" />
@@ -991,7 +1000,6 @@
             <element signature="e#9682#9729#0" />
             <element signature="e#9735#9882#0" />
             <element signature="e#9888#10110#0" />
-            <element signature="e#11029#11988#0" />
             <element signature="e#10887#11876#0" />
           </folding>
         </state>
@@ -1101,6 +1109,8 @@
             <element signature="e#2854#3020#0" />
             <element signature="e#3026#3625#0" />
             <element signature="e#3704#6334#0" />
+            <element signature="e#6378#6916#0" />
+            <element signature="e#6455#6900#0" />
             <element signature="e#6340#6698#0" />
             <element signature="e#6704#6957#0" />
             <element signature="e#6963#7125#0" />
@@ -1121,7 +1131,6 @@
             <element signature="e#9682#9729#0" />
             <element signature="e#9735#9882#0" />
             <element signature="e#9888#10110#0" />
-            <element signature="e#11029#11988#0" />
             <element signature="e#10887#11876#0" />
           </folding>
         </state>
@@ -1192,6 +1201,8 @@
             <element signature="e#2854#3020#0" />
             <element signature="e#3026#3625#0" />
             <element signature="e#3704#6334#0" />
+            <element signature="e#6378#6916#0" />
+            <element signature="e#6455#6900#0" />
             <element signature="e#6340#6698#0" />
             <element signature="e#6704#6957#0" />
             <element signature="e#6963#7125#0" />
@@ -1212,7 +1223,6 @@
             <element signature="e#9682#9729#0" />
             <element signature="e#9735#9882#0" />
             <element signature="e#9888#10110#0" />
-            <element signature="e#11029#11988#0" />
             <element signature="e#10887#11876#0" />
           </folding>
         </state>
@@ -1278,8 +1288,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/SudokuCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="208" column="72" selection-start-line="208" selection-start-column="72" selection-end-line="208" selection-end-column="72" />
+        <state relative-caret-position="546">
+          <caret line="406" column="22" lean-forward="true" selection-start-line="406" selection-start-column="22" selection-end-line="406" selection-end-column="22" />
           <folding>
             <element signature="e#1010#1283#0" />
             <element signature="e#1289#1381#0" />
@@ -1290,6 +1300,8 @@
             <element signature="e#2854#3020#0" />
             <element signature="e#3026#3625#0" />
             <element signature="e#3704#6334#0" />
+            <element signature="e#6378#6916#0" />
+            <element signature="e#6455#6900#0" />
             <element signature="e#6340#6698#0" />
             <element signature="e#6704#6957#0" />
             <element signature="e#6963#7125#0" />
@@ -1310,7 +1322,6 @@
             <element signature="e#9682#9729#0" />
             <element signature="e#9735#9882#0" />
             <element signature="e#9888#10110#0" />
-            <element signature="e#11029#11988#0" />
             <element signature="e#10887#11876#0" />
           </folding>
         </state>
