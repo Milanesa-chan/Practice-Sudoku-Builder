@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="SudokuBuilder:jar" />
+      <artifact name="SudokuBuilder" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
@@ -34,7 +34,7 @@
       <file leaf-file-name="SudokuCreator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/SudokuCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
+            <state relative-caret-position="1976">
               <caret line="353" column="44" lean-forward="true" selection-start-line="353" selection-start-column="44" selection-end-line="353" selection-end-column="44" />
               <folding>
                 <element signature="e#11404#12516#0" />
@@ -152,7 +152,7 @@
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="Sudoku Builder" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Current Build" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -965,7 +965,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/milanesa/sudoku/main/SudokuCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
+        <state relative-caret-position="1976">
           <caret line="353" column="44" lean-forward="true" selection-start-line="353" selection-start-column="44" selection-end-line="353" selection-end-column="44" />
           <folding>
             <element signature="e#11404#12516#0" />
@@ -979,7 +979,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>SudokuBuilder.jar</last-edited>
+          <last-edited>SudokuBuilder</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
