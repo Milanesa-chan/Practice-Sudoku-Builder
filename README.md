@@ -1,5 +1,5 @@
 # Practice-Sudoku-Builder
-A simple java app to help you build a valid sudoku grid. 
+A simple java app to help you build a valid sudoku grid. The project has been archived to move on with more important projects. Feel free to do whatever you want with this.
 
 <img src="https://img.shields.io/badge/Java%20Version-8-green.svg"/>
 
